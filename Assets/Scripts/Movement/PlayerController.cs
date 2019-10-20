@@ -4,19 +4,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using RPG.Movement;
 using RPG.Combat;
+using UnityEngine.UI;
+
 namespace RPG.Control
 {
     public class PlayerController : MonoBehaviour {
-        // Start is called before the first frame update
+
+        Collider colliderClicked;
+        Animation combatAnimation;
+
         void Start () {
+          
 
         }
 
-        // Update is called once per frame
         void Update ()
         {
             if (InteractWithCombat()) return;
             if (InteractWithMovement()) return;
+            
             print("Nothing to do");
 
         }
@@ -30,6 +36,7 @@ namespace RPG.Control
 
                 if (Input.GetMouseButtonDown(0)) {
                     GetComponent<Fighter>().Attack(target);
+                    Debug.Log("Fighting");
                 }
                     return true;
             }
