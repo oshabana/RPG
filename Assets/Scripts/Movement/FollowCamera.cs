@@ -15,8 +15,8 @@ namespace RPG.Core {
         float zoom = 0;
         Vector3 zoom_offset = new Vector3(0, 0, 0);
         // Vector3 rotation_offset = new Vector3(0, 0, 0);
-       
 
+     
         void Start()
         {
 
@@ -36,16 +36,11 @@ namespace RPG.Core {
                 
             }
          
-             cam.transform.position = player.position + offset + zoom_offset;
-            
+            cam.transform.position = player.position + offset + zoom_offset;
+          
 
-           
         }
-        private void LateUpdate()
-        {
-            
-        }
-        //
+
         void mouseScrollLock(float zoom_delta)
         {
             if (zoom_delta + zoom > min_zoom - 1 && zoom_delta + zoom < max_zoom + 1)

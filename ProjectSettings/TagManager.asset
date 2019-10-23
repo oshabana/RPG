@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Terrain
   - Test Enemy
+  - Item
+  - Tree
+  - Rock
   layers:
   - Default
   - TransparentFX

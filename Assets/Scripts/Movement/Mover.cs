@@ -11,18 +11,18 @@ namespace RPG.Movement
     {
 
         NavMeshAgent navMeshAgent;
-        Animator animator;
+       // Animator animator;
 
         void Start() {
             navMeshAgent = GetComponent<NavMeshAgent>();
-            animator = GetComponent<Animator>();
+          //  animator = GetComponent<Animator>();
         }
 
         void Update()
         {
 
             UpdateAnimator();
-            animator.Play("Attack");
+            //animator.Play("Attack");
             
         }
 
@@ -38,9 +38,14 @@ namespace RPG.Movement
 
         public void MoveTo(Vector3 destination)
         {
-            navMeshAgent.destination = destination;
             
+            //navMeshAgent.destination = destination;
+            navMeshAgent.SetDestination(destination);
+
             navMeshAgent.isStopped = false;
+          
+             
+            
         }
         public void Stop() {
             navMeshAgent.isStopped = true;

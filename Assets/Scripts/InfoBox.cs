@@ -12,7 +12,7 @@ public class InfoBox : MonoBehaviour
     {
 
         // Canvas canvas = GetComponent<Canvas>();
-        infoLabel = GetComponent<UnityEngine.UI.Text>();
+        infoLabel = GetComponent<Text>();
         Debug.Log(infoLabel.text);
        
     }
@@ -47,11 +47,11 @@ public class InfoBox : MonoBehaviour
         string tag = collider.tag;
         if (tag.Equals("Terrain"))
         {
-            tag = "Walk here";
+            tag = "";
         }
         else if (tag.Equals("Player"))
         {
-            tag = "Walk here";
+            tag = "";
         }
         return tag;
 
@@ -63,7 +63,7 @@ public class InfoBox : MonoBehaviour
     private void OnMouseOver()
     {
         RaycastHit hit;
-        Debug.Log("Mouse over");
+
         if (Physics.Raycast(GetMouseRay(), out hit))
         {
             hoverCollider = hit.collider;
