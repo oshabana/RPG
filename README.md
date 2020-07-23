@@ -1,6 +1,6 @@
 # RPG
 
-A small rpg game I may (or may not) work on.
+A small rpg game.
 
 So far I have: 
   - An inventory system for holding items. The middle mouse button drops the item when stored
