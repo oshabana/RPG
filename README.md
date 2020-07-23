@@ -6,4 +6,11 @@ So far I have:
   - An inventory system for holding items. The middle mouse button drops the item when stored
   - A tag that informs the player of what they are hovering over
   - Mining and woodcutting are skills that the player can engage in
-  - So far I have implemented scripts to handle item creation/destruction and you can pick them up and store them in your           inventory
+  - So far I have implemented scripts to handle item creation/destruction and you can pick them up and store them in your inventory
+  
+Todo
+  - Implement UI elements for dialogue, skills, stats, and HUD
+  - Implement a skilling system
+  - Futher improve graphics
+  - Add quests
+ 
